@@ -1,0 +1,37 @@
+img {
+	width: 100px;
+	/*display:inline-block;*/
+}
+div	{
+	display:inline-block;
+}
+.wrapper {
+	width: 800px;
+	background-color: #d3d1ad;
+
+}
+.main {
+	margin: 0 auto;
+	width: 710px;
+	display:block;
+}
+.header {
+	width: 510px;
+	margin:0 auto;
+	display:block;
+}
+h1{
+	display:inline-block;
+}
+.blue {
+	background-color:  #82b3ed;
+	padding:15px 15px 12px 15px;
+	border: 3px solid black;
+	margin:1px;
+}
+.red {
+	background-color: #f3696f;
+	padding:15px 15px 12px 15px;
+	border: 3px solid black;
+	margin:1px;
+}

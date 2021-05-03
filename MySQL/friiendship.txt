@@ -1,0 +1,40 @@
+  SELECT users.first_name, users.last_name, users2.first_name AS friend_first_name , users2.last_name AS friend_last_name
+    FROM users
+    LEFT JOIN friendships ON users.id = friendships.friend_1_id
+    LEFT JOIN users AS users2 ON friendships.friend_2_id = users2.id
+    WHERE friendships.friend_1_id = '4' OR friendships.friend_2_id = '4'
+
+  SELECT COUNT(friendships.friend_1_id) AS amount_of_friendships
+    FROM friendships;
+
+  SELECT users.first_name, users.last_name, COUNT(users.id) AS number_of_friendships
+    FROM users
+    LEFT JOIN friendships ON users.id = friendships.friend_1_id
+    LEFT JOIN users AS users2 ON friendships.friend_2_id = users2.id
+    WHERE users.id = '1';
+
+  INSERT INTO users (first_name, last_name, created_at)
+    VALUES ('Matty', 'Calimbas', NOW())
+
+    //SECOND QUERY\\
+    INSERT INTO friendships (friend_1_id, friend_2_id, created_at)
+    VALUES ('6', '2', NOW()), ('6', '4', NOW()), ('6', '5', NOW());
+  SELECT users.first_name, users.last_name, users2.first_name AS friend_first_name, users2.last_name AS friend_last_name  
+    FROM users
+    LEFT JOIN friendships ON users.id = friendships.friend_1_id
+    LEFT JOIN users AS users2 ON friendships.friend_2_id = users2.id
+    WHERE users.id = '2' OR users2.id = '2'
+    ORDER BY friend_last_name ASC;
+
+  DELETE FROM friendships 
+    WHERE friend_1_id = '2'AND friend_2_id = '5';
+
+  SELECT users.first_name, users.last_name, users2.first_name AS friend_first_name, users2.last_name AS friend_last_name
+   FROM users
+    LEFT JOIN friendships ON users.id = friendships.friend_1_id
+    LEFT JOIN users AS users2 ON friendships.friend_2_id = users2.id\
+
+
+SELECT users.first_name,users.last_name,user2.first_name,user2.last_name 
+FROM users JOIN friendships ON users.id=friendships.user_id 
+LEFT JOIN users as user2 ON user2.id = friendships.friend_id;

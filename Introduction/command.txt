@@ -1,0 +1,12 @@
+cp for copying 		
+cd to go back
+rm to remove files
+rm -rf for removing dirictory with files into it
+ls to list the files in a dirictory 
+pwd to print the path
+mkdir to make a dirictory
+git init intitlize	
+git clone to clone from githhub
+git add . 
+git commit .
+git push

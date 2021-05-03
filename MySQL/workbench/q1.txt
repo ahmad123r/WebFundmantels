@@ -1,0 +1,11 @@
+INSERT INTO twitter.faves (id, user_id, tweet_id, created_at, updated_at) VALUES ('8', '1', '12', '2010-02-01 00:00:01', '2010-02-01 00:00:01');
+
+ here is to insert data
+DELETE FROM twitter.faves WHERE (id = '6');
+delete the row it is id is 6
+
+SELECT * FROM twitter.faves;
+show to us the table faves from database twitter
+
+UPDATE twitter.faves SET tweet_id = 56 WHERE (id = 4);
+here is upadte the vlaues in row it is id is 4

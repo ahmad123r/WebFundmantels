@@ -1,0 +1,17 @@
+first one is :
+Hello
+
+
+scenoed one :
+Summing Numbers!
+num1 is: 3
+num2 is: 5
+Summing Numbers!
+num1 is: 4
+num2 is: 7
+8
+11
+
+third one is :
+print nothing
+because the we do not know the num value and the function not called

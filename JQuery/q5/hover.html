@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="nex1.css">
+        </head>
+        <body>
+            <script>
+                $(document).ready(function(){
+                    $('img').hover(function() {
+                        var temp = $(this).attr("src")
+                        $(this).attr("src",$(this).attr("data-alt-src"))
+                        $(this).attr("data-alt-src",temp)
+
+  console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+});
+                })
+            </script>
+
+            <div class="cont">
+              
+                   
+                        
+                        <center>
+                        <div class="t2">
+                           
+                          
+                            <img src='C:\Users\ahmad\Downloads\Compressed\img\cat0.png' data-alt-src='C:\Users\ahmad\Downloads\Compressed\img\ninja1.png' />
+                            <img src='C:\Users\ahmad\Downloads\Compressed\img\cat1.png' data-alt-src='C:\Users\ahmad\Downloads\Compressed\img\ninja2.png'/>
+                            <img src='C:\Users\ahmad\Downloads\Compressed\img\cat2.png' data-alt-src='C:\Users\ahmad\Downloads\Compressed\img\ninja3.png' />
+                            <img src='C:\Users\ahmad\Downloads\Compressed\img\cat3.png' data-alt-src='C:\Users\ahmad\Downloads\Compressed\img\ninja0.png' />
+                      
+
+                          
+                        </div>
+                    </center>
+            </div>
+             
+
+            
+        </body>
+
+</html>

@@ -1,0 +1,58 @@
+  
+<!dostype html>
+<html>
+    <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="jq1.css">
+        </head>
+        <body>
+            <script>
+                $(document).ready(function(){
+                    $(".t1 button").click(function(){
+                        $( ".t1 p" ).addClass( "red" );
+
+
+
+                    });
+                    $(".t2 button").click(function(){
+                        $( ".t2 img" ).slideToggle()
+                    });
+                    $(".r3 button").click(function(){
+                        $( ".r3 p" ).append("hi there")
+                    });
+                })
+            </script>
+
+            <div class="cont">
+                <div class="r1">
+                    <h1>add calss</h1>
+                    <div class="t1">
+                        <button >AddClass</button>
+                        <p>Click the button to add class 'red' to this pragraph </p>
+                    </div>
+                    <div class="k1">
+
+                    </div>
+                    <div class="r2">
+                        <h1>add calss</h1>
+                        <div class="t2">
+                            <button type="button">Slidetoggle</button>
+                            <p>Click the button to Slidetoggle a hidden image</p>
+                          <img src="D:\\hi\\r1.jpg" alt="here is an image" >
+                        </div>
+                    </div>
+                    <div class="k1">
+
+                    </div>
+                        <div class="r3">
+                            <h1>add calss</h1>
+                            <div class="t3">
+                                <button type="button">Append</button>
+                                <p>Click the button to append a new pragraph</p>
+                            </div>
+                </div>
+
+            </div>
+        </body>
+
+</html>

@@ -1,0 +1,288 @@
+First one:
+function biggi(){
+var arr =[-1,3,5,-5];
+for(var i=0;i<arr.length;i++)
+if(arr[i]>0)
+arr[i]='big';
+return arr;
+
+}
+biggi();
+console.log(biggi());
+
+2nd:
+var arr =[-1,3,5,-5];
+function biggi(arr){
+
+var max=arr[0];
+var min =arr[0];
+
+for(var i=0;i<arr.length;i++)
+{
+if(arr[i]>max)
+max=arr[i];
+if(arr[i]<min)
+min=arr[i];
+
+}
+console.log("the min is:",min);
+return max;
+
+}
+
+console.log(biggi(arr));
+ 
+
+
+3rd:
+var arr =[2,3,5,-5];
+function biggi(arr){
+var x;
+
+
+for(var i=0;i<arr.length;i++)
+
+{
+if(i>0){
+console.log("the others",arr[i])}
+
+
+}
+for(var i=0;i<arr.length;i++)
+if(arr[i]%2 !=0)
+
+return arr[i];
+
+}
+
+console.log(biggi(arr));
+
+
+
+4th:
+
+var arr =[2,3,5,-5];
+function biggi(arr){
+var x=[];
+
+
+for(var i=0;i<arr.length;i++)
+
+{
+
+x.push(arr[i]*2);
+
+
+}
+return x;
+
+
+}
+
+console.log(biggi(arr));
+
+
+
+5th:
+var arr =[-1,1,1,1];
+function biggi(arr){
+var x=[];
+
+
+for(var i=0;i<arr.length;i++)
+
+{
+if(arr[arr.length-1]>0 )
+arr[arr.length-1]=3;
+
+
+}
+return arr;
+
+
+}
+
+console.log(biggi(arr));
+
+
+
+6th:
+var arr =[-1,1,1,1];
+function biggi(arr){
+var x=[];
+
+
+for(var i=0;i<arr.length;i++)
+
+{
+if((arr[i]&&arr[i+1]&&arr[i+2] %2 ==0))
+console.log("Even more so!");
+if((arr[i]&&arr[i+1]&&arr[i+2] %2 !=0))
+console.log("That's odd!");
+
+
+}
+return arr;
+
+
+}
+biggi(arr);
+
+
+
+
+7th:
+var arr =[-1,1,1,1];
+function biggi(arr){
+var x=[];
+
+
+for(var i=0;i<arr.length;i++)
+
+{
+if(i%2 !=0){
+arr[i]+=1;
+console.log(arr[i]);
+}
+}
+return arr;
+
+
+}
+
+ console.log(biggi(arr));
+
+
+
+8th:
+var arr =["hello", "dojo", "awesome"];
+function biggi(arr){
+var x=[];
+
+arr[1]=4;
+arr[2]=5;
+return arr;
+
+
+}
+
+ console.log(biggi(arr));
+ 
+
+
+9th:
+
+var arr =[1,2,3];
+function biggi(arr){
+var x=[];
+
+
+for(var i=0;i<arr.length;i++)
+
+{
+x.push(arr[i]+7)
+
+}
+return x;
+
+
+}
+
+ console.log(biggi(arr));
+
+
+ 
+10th:
+
+var arr =[1,2,3,4,5,6];
+function biggi(arr){
+  var left = null;
+    var right = null;
+    var length = arr.length;
+    for (left = 0; left < length / 2; left += 1)
+    {
+        right = length - 1 - left;
+        var temporary = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temporary;
+    }
+    return arr;
+
+}
+
+ console.log(biggi(arr));
+ 
+
+
+11th:
+var arr =[1,2,-3,4,5,6];
+function biggi(arr){
+var i;
+for(i=0;i<arr.length;i++){
+if(arr[i]>0){
+arr[i]*=-1;
+}
+}
+    return arr;
+
+}
+
+ console.log(biggi(arr));
+ 
+
+12th:
+var arr =[1,2,'food',4,5,6];
+function biggi(arr){
+var i;
+for(i=0;i<arr.length;i++){
+if(arr[i]=='food'){
+console.log("yammy");
+break;
+}
+else{
+console.log("i am hungry");
+break;
+
+}
+}
+    return arr;
+
+}
+biggi(arr);
+
+
+13th:
+var array = [true,42,"Ada",2,"pizza"];
+var nums = [1,2,3,4,5,6];
+function swapTowardCenter(arr){
+  var temp = arr[0]; 
+  arr[0] = arr[arr.length-1];
+  arr[arr.length-1] = temp;
+  var temp2 = arr[2];
+  arr[2] = arr[arr.length-3];
+  arr[arr.length-3] = temp2;
+  return arr;
+}
+console.log(swapTowardCenter(array));
+console.log(swapTowardCenter(nums));
+
+
+14th:
+function scaleArray(arr,num){
+  for (var i=0;i<arr.length;i++){
+    arr[i] = arr[i]*num;
+  }
+  return arr;
+}
+
+var array = [1,2,3];
+var number = 3;
+console.log(scaleArray(array,number));
+
+
+ 
+
+
+
+
+

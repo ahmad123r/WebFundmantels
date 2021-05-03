@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="catninja.css">
+        </head>
+        <body>
+            <script>
+                $(document).ready(function(){
+                    $('img').click(function() {
+                        var temp = $(this).attr("src")
+                        $(this).attr("src",$(this).attr("data-alt-src"))
+                        $(this).attr("data-alt-src",temp)
+
+  console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+});
+                })
+            </script>
+
+            <div class="cont">
+              
+                    <div class="r2">
+                        <h1>add calss</h1>
+                        <center>
+                        <div class="t2">
+                            <button type="button">Slidetoggle</button>
+                          
+                            <img src='C:\Users\ahmad\Downloads\Compressed\img\cat0.png' data-alt-src='C:\Users\ahmad\Downloads\Compressed\img\cat1.png' />
+                            <img src='C:\Users\ahmad\Downloads\Compressed\img\cat1.png' data-alt-src='C:\Users\ahmad\Downloads\Compressed\img\cat0.png'/>
+                            <img src='C:\Users\ahmad\Downloads\Compressed\img\cat2.png' data-alt-src='C:\Users\ahmad\Downloads\Compressed\img\cat3.png' />
+                            <img src='C:\Users\ahmad\Downloads\Compressed\img\cat3.png' data-alt-src='C:\Users\ahmad\Downloads\Compressed\img\cat4.png' />
+                            <img src='C:\Users\ahmad\Downloads\Compressed\img\cat4.png' data-alt-src='C:\Users\ahmad\Downloads\Compressed\img\cat2.png' />
+                            <img src='C:\Users\ahmad\Downloads\Compressed\img\ninja0.png' data-alt-src='C:\Users\ahmad\Downloads\Compressed\img\ninja1.png' />
+                            <img src='C:\Users\ahmad\Downloads\Compressed\img\ninja1.png' data-alt-src='C:\Users\ahmad\Downloads\Compressed\img\ninja3.png' />
+                            <img src='C:\Users\ahmad\Downloads\Compressed\img\ninja2.png' data-alt-src='C:\Users\ahmad\Downloads\Compressed\img\ninja4.png' />
+                            <img src='C:\Users\ahmad\Downloads\Compressed\img\ninja3.png' data-alt-src='C:\Users\ahmad\Downloads\Compressed\img\ninja2.png' />
+                            <img src='C:\Users\ahmad\Downloads\Compressed\img\ninja4.png' data-alt-src='C:\Users\ahmad\Downloads\Compressed\img\ninja0.png' />
+
+                          
+                        </div>
+                    </center>
+                    </div>
+             
+
+            </div>
+        </body>
+
+</html>

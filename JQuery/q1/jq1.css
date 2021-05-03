@@ -1,0 +1,37 @@
+.cont{
+ height: 700px;
+text-align: center;
+}
+.t1{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin-right: 30px;
+    height: 20px;
+    margin-top: 15px;
+}
+.t2{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.t3{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.k1{
+    border: 2px solid black;
+    width: 500px;
+    margin-left: 430px;
+}
+.red{
+    background-color: red;
+}
+img{
+    width: 100px;
+    height: 100px;
+   display: none;
+}

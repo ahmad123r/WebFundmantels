@@ -1,0 +1,60 @@
+select city.city_id ,customer.first_name,customer.last_name,customer.emil,address.address,city.city,country.country
+from country
+join customer join city join address where city.city_id=312 && customer.address_id=address.address_id
+&& address.city_id=city.city_id&&country.country_id = city.country_id;
+
+
+SELECT film.title, film.description, film.release_year, film.rating, film.special_features, category.name AS genre
+ FROM film 
+JOIN film_category ON film.film_id = film_category.film_id
+JOIN category ON film_category.category_id = category.category_id 
+WHERE category.name = 'Comedy'
+
+select actor.actor_id,CONCAT_WS( " ", first_name, last_name ) as name ,film.title,film.description,film.release_year
+ 
+from film
+join actor where actor.actor_id =5 
+
+
+
+select customer.first_name,customer.last_name, customer.email,address.address
+from customer join city join address join store where city.city_id IN (1, 42, 312, 459) && address.address_id=customer.address_id &&
+customer.store_id=   store.store_id && customer.store_id=1 && address.city_id = city.city_id
+
+
+
+select film.title, film.description,film.release_year,film.rating,film.special_features
+from film 
+join actor join film_actor where actor.actor_id=15 && film.rating= 'G' && film.special_features like "%Behind the scenes"
+&& film.film_id=film_actor.film_id && actor.actor_id = film_actor.actor_id;
+
+
+
+select film.film_id,film.title,actor.actor_id,CONCAT_WS( " ", first_name, last_name ) as name
+from film 
+join actor join film_actor where film.film_id=369 && film.film_id=film_actor.film_id && actor.actor_id=film_actor.actor_id
+
+
+
+
+select film.title,film.description,film.release_year,film.rating,film.special_features,category.name As genre 
+
+from film join category join film_category  where  film.rental_rate=2.99
+&& category.name ="Drama" && film.film_id = film_category.film_id  &&film_category.category_id = category.category_id
+
+; 
+
+
+
+select  film.title, film.description, film.release_year, film.rating, film.special_features,category.name As genre ,actor.first_name
+from film join category join actor join film_actor join film_category where category.name ="action" && actor.first_name="SANDRA" && actor.last_name="KILMER" && 
+film.film_id= film_category.film_id && category.category_id= film_category.category_id && actor.actor_id=film_actor.actor_id && film.film_id=film_actor.film_id
+
+
+
+
+
+
+
+
+
